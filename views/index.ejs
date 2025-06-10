@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title><%= title %></title>
+
+</head>
+<body>
+  <h1><%= title %></h1>
+
+  <% if (posts.length > 0) { %>
+    <% posts.forEach(post => { %>
+      <div class="post">
+        <h2><%= post.title %></h2>
+        <h4><%= post.subject %></h4>
+        <p><%= post.text %></p>
+        <time><%= post.timestamp %></time>
+      </div>
+    <% }) %>
+  <% } else { %>
+    <p>No posts yet.</p>
+  <% } %>
+
+  <form action="/" method="POST">
+    <label>
+      Title
+      <input type="text" name="title" required>
+    </label>
+    <label>
+      Subject
+      <input type="text" name="subject" required>
+    </label>
+    <label>
+      Text
+      <textarea name="text" rows="5" required></textarea>
+    </label>
+    <button type="submit">Add Post</button>
+  </form>
+</body>
+</html>

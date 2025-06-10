@@ -1,0 +1,24 @@
+{
+  "name": "cs-312-miniproject-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwf2/CS-312-MiniProject-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iwf2/CS-312-MiniProject-1/issues"
+  },
+  "homepage": "https://github.com/iwf2/CS-312-MiniProject-1#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
