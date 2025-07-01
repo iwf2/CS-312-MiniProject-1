@@ -19,6 +19,9 @@
   "homepage": "https://github.com/iwf2/CS-312-MiniProject-1#readme",
   "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "bcrypt": "^6.0.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "pg": "^8.16.3"
   }
 }

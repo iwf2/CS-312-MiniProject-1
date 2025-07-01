@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edit Post</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h2>Edit Your Post</h2>
+
+      <form action="/edit/<%= post.blog_id %>" method="POST" class="auth-form">
+        <input type="text" name="title" value="<%= post.title %>" placeholder="Title" required />
+        <input type="text" name="subject" value="<%= post.subject %>" placeholder="Subject" required />
+        <textarea name="text" rows="6" placeholder="Post content" required><%= post.text %></textarea>
+        <button type="submit">Update Post</button>
+      </form>
+
+      <p style="margin-top: 20px;">
+        <a href="/">← Back to Blog</a>
+      </p>
+      
+    </div>
+  </div>
+</body>
+</html>
